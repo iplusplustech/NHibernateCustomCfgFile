@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateCustomCfgFile" namespace="NHibernateCustomCfgFile.Models">
+  <class name="DTOUser" table="User" discriminator-value="C">
+    <id name="Id" column="Id" type="Int32">
+      <generator class="assigned">
+      </generator>
+    </id>
+    <property name = "Name"          column = "Name"        type = "String"/>
+    <property name = "Active"        column = "Active"      type = "Int16"/>    
+  </class>
+</hibernate-mapping>
